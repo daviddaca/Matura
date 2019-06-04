@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak10", "Zadatak10\Zadatak10.csproj", "{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak10WebApp", "Zadatak10WebApp\Zadatak10WebApp.csproj", "{15356D64-18AC-4077-B299-D177CDF5ECE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE} = {AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7280B1-4A1C-45E7-A8FB-BF0F00C977AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15356D64-18AC-4077-B299-D177CDF5ECE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15356D64-18AC-4077-B299-D177CDF5ECE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15356D64-18AC-4077-B299-D177CDF5ECE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15356D64-18AC-4077-B299-D177CDF5ECE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
