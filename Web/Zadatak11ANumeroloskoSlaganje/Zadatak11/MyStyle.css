@@ -1,0 +1,124 @@
+﻿body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+.zadatak_no {
+    float: left;
+    padding: 30px 0;
+    border-right: 1px solid white;
+    width: 130px;
+}
+
+.zadatak_naziv {
+    padding: 30px 0;
+}
+
+.page_holder {
+    margin: auto;
+    width: 900px;
+    border: 1px solid #264c73;
+}
+
+.header_panel {
+    background-color: #264c73;
+    color: white;
+    border-bottom: 2px solid #3f7fc0;
+}
+
+.footer {
+    background-color: #264c73;
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid #3f7fc0;
+}
+
+.command {
+    text-align: center;
+    padding: 10px;
+}
+
+.back_panel {
+    float: left;
+    width: 50%;
+}
+
+.podaci_o_osobi {
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+}
+
+.result {
+    padding: 10px;
+    height: 300px;
+}
+
+.result_label1 {
+    font-size: 32px;
+    color: white;
+    margin: auto;
+}
+
+.result_label2 {
+    font-size: 32px;
+    color: white;
+    margin: auto;
+}
+
+.result_label_percent {
+    font-size: 48px;
+    font-weight: bold;
+    color: green;
+}
+
+.result_field {
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    padding-top: 100px;
+}
+
+.result_holder {
+    float: left;
+    width: 20%;
+}
+
+.result_holder_names {
+    float: left;
+    width: 40%;
+    background-image: url('slike/srce.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label_text {
+    margin-left: 20px;
+}
+
+hr.my_hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#lblerror_message {
+    color: red;
+}
+
+.footer a {
+    padding-right: 20px;
+    color: white;
+    float: right;
+}
+
+.about {
+    padding: 20px;
+    color: #00264d;
+}
+
+.uputstvo {
+    padding: 20px;
+    color: #00264d;
+}
