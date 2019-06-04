@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Zadatak18.Models.Prognoza>
+
+@{
+    ViewBag.Title = "MaxTemperature";
+}
+
+<h2>Maksimalne temperature</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Sifra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NazivMesta)
+        </th>       
+        <th>
+            @Html.DisplayNameFor(model => model.MaxTemperatura)
+        </th>              
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>            
+            @Html.DisplayFor(modelItem => item.Sifra)
+        </td>
+        <td>
+            <a href="/Home/Prognoza?Sifra=@item.Sifra">
+                @Html.DisplayFor(modelItem => item.NazivMesta)
+            </a>
+        </td>        
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxTemperatura)
+        </td>              
+    </tr>
+}
+
+</table>

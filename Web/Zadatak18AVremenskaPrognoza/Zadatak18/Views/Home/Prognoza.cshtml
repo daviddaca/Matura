@@ -1,0 +1,49 @@
+﻿@model Zadatak18.Models.Prognoza
+
+@{
+    ViewBag.Title = "Prognoza";
+}
+
+<h2>Prognoza</h2>
+
+<div>
+    <form action="/Home/Prognoza" method="get">
+        <label>Mesto</label>
+        @Html.DropDownListFor(m => m.Sifra, Model.Mesta)
+        <input type="submit" value="Prikaži">
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Sifra))
+    {
+        <div style="padding-top:10px;">
+            <div>
+                <label class="col-md-2">Šifra mesta</label>
+                <label>@Model.Sifra</label>
+            </div>
+
+            <div>
+                <label class="col-md-2">Naziv mesta</label>
+                <label>@Model.NazivMesta</label>
+            </div>
+
+            <div>
+                <label class="col-md-2">Min temperatura</label>
+                <label>@Model.MinTemperatura</label>
+            </div>
+
+            <div>
+                <label class="col-md-2">Max temperatura</label>
+                <label>@Model.MaxTemperatura</label>
+            </div>
+
+            <div>
+                @{
+                    var path = "/slike/" + @Model.Vreme + ".png";
+                }
+                <img src="@path" />
+            </div>
+        </div>
+    }
+
+</div>
+
