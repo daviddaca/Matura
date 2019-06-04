@@ -1,0 +1,17 @@
+<biblioteka>
+    <knjiga ISBN="10-000000-001" 
+        naslov="Baze podataka" 
+        stanje="12"
+        citano="15">
+   </knjiga>
+   <knjiga ISBN="10-000000-002" 
+        naslov="Programiranje C#" 
+        stanje="24"
+        citano="18">
+   </knjiga>
+    <knjiga ISBN="11-000000-003" 
+        naslov="Web programiranje" 
+        stanje="5"
+        citano="7">
+   </knjiga>
+</biblioteka>
