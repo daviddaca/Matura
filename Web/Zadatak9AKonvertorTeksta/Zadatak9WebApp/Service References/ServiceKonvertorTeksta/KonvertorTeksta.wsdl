@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CirilicaULatinicu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tekst" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CirilicaULatinicuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CirilicaULatinicuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LatinicaUCirilicu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tekst" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LatinicaUCirilicuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LatinicaUCirilicuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CirilicaULatinicuSoapIn">
+    <wsdl:part name="parameters" element="tns:CirilicaULatinicu" />
+  </wsdl:message>
+  <wsdl:message name="CirilicaULatinicuSoapOut">
+    <wsdl:part name="parameters" element="tns:CirilicaULatinicuResponse" />
+  </wsdl:message>
+  <wsdl:message name="LatinicaUCirilicuSoapIn">
+    <wsdl:part name="parameters" element="tns:LatinicaUCirilicu" />
+  </wsdl:message>
+  <wsdl:message name="LatinicaUCirilicuSoapOut">
+    <wsdl:part name="parameters" element="tns:LatinicaUCirilicuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="KonvertorTekstaSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CirilicaULatinicu">
+      <wsdl:input message="tns:CirilicaULatinicuSoapIn" />
+      <wsdl:output message="tns:CirilicaULatinicuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LatinicaUCirilicu">
+      <wsdl:input message="tns:LatinicaUCirilicuSoapIn" />
+      <wsdl:output message="tns:LatinicaUCirilicuSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="KonvertorTekstaSoap" type="tns:KonvertorTekstaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CirilicaULatinicu">
+      <soap:operation soapAction="http://tempuri.org/CirilicaULatinicu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LatinicaUCirilicu">
+      <soap:operation soapAction="http://tempuri.org/LatinicaUCirilicu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="KonvertorTekstaSoap12" type="tns:KonvertorTekstaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CirilicaULatinicu">
+      <soap12:operation soapAction="http://tempuri.org/CirilicaULatinicu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LatinicaUCirilicu">
+      <soap12:operation soapAction="http://tempuri.org/LatinicaUCirilicu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="KonvertorTeksta">
+    <wsdl:port name="KonvertorTekstaSoap" binding="tns:KonvertorTekstaSoap">
+      <soap:address location="http://localhost:52556/KonvertorTeksta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="KonvertorTekstaSoap12" binding="tns:KonvertorTekstaSoap12">
+      <soap12:address location="http://localhost:52556/KonvertorTeksta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

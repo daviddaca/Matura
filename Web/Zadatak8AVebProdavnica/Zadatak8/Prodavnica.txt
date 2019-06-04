@@ -1,0 +1,2 @@
+﻿1|ALCATEL ONE TOUCH 5020X-M POP|Alcatel|512|NE|4|5|Single Core|/Slike/sl1.jpg|11.990
+2|Lenovo K900, 32GB, Steel Gray|Lenovo|2|NE|5.5|13|Dual Core|/Slike/sl2.jpg|49.990

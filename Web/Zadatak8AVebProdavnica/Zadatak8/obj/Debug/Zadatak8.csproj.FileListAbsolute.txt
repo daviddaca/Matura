@@ -1,0 +1,6 @@
+D:\VebProgramiranje\Zadatak8\Zadatak8\bin\Vezba7.dll.config
+D:\VebProgramiranje\Zadatak8\Zadatak8\bin\Vezba7.dll
+D:\VebProgramiranje\Zadatak8\Zadatak8\bin\Vezba7.pdb
+D:\VebProgramiranje\Zadatak8\Zadatak8\obj\Debug\Zadatak8.csprojResolveAssemblyReference.cache
+D:\VebProgramiranje\Zadatak8\Zadatak8\obj\Debug\Vezba7.dll
+D:\VebProgramiranje\Zadatak8\Zadatak8\obj\Debug\Vezba7.pdb
