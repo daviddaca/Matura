@@ -1,0 +1,46 @@
+﻿@model Zadatak16.Models.Raspored
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Raspored časova</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <h3>@Model.ErrorMessage</h3>
+}
+else if (Model.Casovi.Count == 0)
+{
+    <h3>Raspust</h3>
+}
+else
+{
+ 
+    <div style="padding-top:10px;">
+        <table class="table">
+            <tr>
+                <th>Rbr</th>
+                <th>Ponedeljak</th>
+                <th>Utorak</th>
+                <th>Sreda</th>
+                <th>Četvrtak</th>
+                <th>Petak</th>
+            </tr>
+
+            @for (var rbr = 1; rbr < 8; rbr++)
+            {
+                <tr>
+                    <td>@rbr</td>
+                    @foreach (var cas in Model.CasoviZaRbr(rbr))
+                    {
+                        <td>@cas.Predmet</td>
+                    }
+                </tr>
+            }
+
+        </table>
+    </div>
+}
+
+

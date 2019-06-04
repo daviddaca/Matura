@@ -1,0 +1,162 @@
+<root>
+  <Raspored>
+    <Rbr>1</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Tehnicka dokumentacija</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>2</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Tehnicka dokumentacija</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>3</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Zastita informacionih Sistema</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>4</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Elektronsko poslovanje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>5</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Preduzetnistvo</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>6</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Preduzetnistvo</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>7</Rbr>
+    <DanUNedelji>Ponedeljak</DanUNedelji>
+    <Predmet>Internet tehnologije i servisi</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>1</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Engleski jezik</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>2</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Engleski jezik</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>3</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Zastita informacionih sistema</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>4</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Zastita informacionih sistema</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>5</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Fizicko</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>6</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Matematika</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>7</Rbr>
+    <DanUNedelji>Utorak</DanUNedelji>
+    <Predmet>Matematika</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>1</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>2</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>3</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>4</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Web programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>5</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Web programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>6</Rbr>
+    <DanUNedelji>Sreda</DanUNedelji>
+    <Predmet>Web programiranje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>1</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Elektronsko poslovanje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>2</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Elektronsko poslovanje</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>3</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet> Filozofija </Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>4</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Izborna matematika</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>5</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Srpski jezik</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>6</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Srpski jezik</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>7</Rbr>
+    <DanUNedelji>Cetvrtak</DanUNedelji>
+    <Predmet>Matematika</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>1</Rbr>
+    <DanUNedelji>Petak</DanUNedelji>
+    <Predmet>Internet tehnologije i servisi</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>2</Rbr>
+    <DanUNedelji>Petak</DanUNedelji>
+    <Predmet>Internet tehnologije i servisi</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>3</Rbr>
+    <DanUNedelji>Petak</DanUNedelji>
+    <Predmet>Fizicko</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>4</Rbr>
+    <DanUNedelji>Petak</DanUNedelji>
+    <Predmet>Srpski jezik</Predmet>
+  </Raspored>
+  <Raspored>
+    <Rbr>5</Rbr>
+    <DanUNedelji>Petak</DanUNedelji>
+    <Predmet>Veronauka/Gradjansko</Predmet>
+  </Raspored>
+</root>

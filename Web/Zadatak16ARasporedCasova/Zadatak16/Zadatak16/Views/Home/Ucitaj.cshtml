@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Ucitaj";
+}
+
+<h2>Učitaj XML fajl</h2>
+
+<form action="~/Home/FileUpload" method="post" enctype="multipart/form-data">
+    <div class="input-append">
+        <label class="control-label col-md-2">XML datoteka</label>
+        <div class="col-md-3">
+            <input id="filename" class="form-control" name="text" type="text" />
+            <input id="file" style="visibility: hidden;" name="file" type="file" />
+        </div>
+        <div class="col-md-2">
+            <a class="btn btn-default" onclick="$('#file').click();">Izaberi</a>
+        </div>
+        <div style="clear:both;"></div>
+        <div>
+            <input class="btn btn-default" type="submit" value="Učitaj">
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+    $('#file').change(function () {
+        $('#filename').val($('#file').val());
+    });
+</script>
+
