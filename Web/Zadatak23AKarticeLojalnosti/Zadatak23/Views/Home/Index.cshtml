@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Kartice lojalnosti</h2>
+
+<div>
+
+    <label>Broj kartice</label>
+    <input id="BrojKartice" type="text">
+    <input id="provera" onclick="ProveriKarticu();" class="btn-default" type="button" value="Proveri">
+
+</div>
+<hr />
+<div id="podaci_o_kartici">
+
+</div>
+
+<script type="text/javascript">
+
+    function ProveriKarticu() {
+        
+        var brojKartice = document.getElementById("BrojKartice").value; // $("#BrojKartice").val();
+        var url = '@Url.Content("~/Home/ProveraKartice")';
+        
+        if (brojKartice != '') {
+
+            $.ajax({
+                cache: false,
+                url: url,
+                data: { broj_kartice: brojKartice },
+                error: function (request, status, error) {
+                    $("#podaci_o_kartici").html('');
+                    alert(error);
+                }
+            }).done(function (data) {
+                $("#podaci_o_kartici").html(data);
+            });
+        }
+        else {
+            $("#podaci_o_kartici").html('');
+            alert('Kartica mora biti navedena');
+        }
+
+    }
+
+</script>
+
+
+

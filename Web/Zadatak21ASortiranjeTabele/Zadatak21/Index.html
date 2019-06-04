@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sortiranje tabele</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="MyStyle.css" type="text/css" />
+</head>
+<body>
+    <div class="page_holder">
+        <div class="header_panel">
+            <div class="zadatak_no">
+                <label class="label_text">Zadatak 21</label>
+            </div>
+            <div class="zadatak_naziv">
+                <label class="label_text">Sortiranje tabele</label>
+            </div>
+        </div>
+        <div class="back_panel">
+            <h1 style="text-align:center;">SORTIRANJE TABELE</h1>
+            <hr class="my_hr" />
+            <table style="margin: auto;" id="MojaTabela">
+                <tr>
+                    <th style="width: 50px;" onclick="Sortiraj(0);"><a href="#">Rbr</a></th>
+                    <th style="width: 100px;" onclick="Sortiraj(1);"><a href="#">Ime</a></th>
+                    <th style="width: 100px;" onclick="Sortiraj(2);"><a href="#">Prezime</a></th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Pera</td>
+                    <td>Mikić</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Mika</td>
+                    <td>Žikić</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Žika</td>
+                    <td>Perić</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Dragan</td>
+                    <td>Milenković</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Pavle</td>
+                    <td>Tošić</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <label class="label_text">Elektrotehnička škola "Nikola Tesla" Niš</label>
+            <a href="/about.html">O autoru</a>
+            <a href="/uputstvo.html">Uputstvo</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var Smer = 1;
+
+		function Sortiraj(kolona)
+		{
+		    var table = document.getElementById("MojaTabela");
+
+		    for (i = 1; i < table.rows.length - 1; i++) {
+		        for (j = i; j < table.rows.length; j++) {
+		            if ((table.rows[i].cells[kolona].innerHTML < table.rows[j].cells[kolona].innerHTML && Smer == 1) ||
+                        (table.rows[i].cells[kolona].innerHTML > table.rows[j].cells[kolona].innerHTML && Smer != 1)) {
+		                var tmp = table.rows[i].innerHTML;
+		                table.rows[i].innerHTML = table.rows[j].innerHTML;
+		                table.rows[j].innerHTML = tmp;
+		            }
+		        }
+		    }
+
+		    if (Smer == 1)
+		        Smer = 2;
+		    else
+		        Smer = 1;
+		}
+
+    </script>
+</body>
+</html>

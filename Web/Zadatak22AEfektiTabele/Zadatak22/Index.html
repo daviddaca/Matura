@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Efekti tabele</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="MyStyle.css" type="text/css" />
+</head>
+<body>
+    <div class="page_holder">
+        <div class="header_panel">
+            <div class="zadatak_no">
+                <label class="label_text">Zadatak 22</label>
+            </div>
+            <div class="zadatak_naziv">
+                <label class="label_text">Efekti tabele</label>
+            </div>
+        </div>
+        <div class="back_panel">
+            <h1 style="text-align:center;">EFEKTI TABELE</h1>
+            <hr class="my_hr" />
+            <table style="margin:auto;" id="Tabela">
+                <tr>
+                    <th>Rbr</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Škola</th>
+                    <th>Poeni</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Pera</td>
+                    <td>Mikic</td>
+                    <td>OŠ “Vuk Karadžić”</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Mika</td>
+                    <td>Zikic</td>
+                    <td>OŠ “Ivo Andrić”</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Milan</td>
+                    <td>Markovic</td>
+                    <td>OŠ “Mika Antic”</td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Ivan</td>
+                    <td>Tosic</td>
+                    <td>OŠ “Bubanjski heroji”</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Jelana</td>
+                    <td>Peric</td>
+                    <td>OŠ “Milan Milutinovic”</td>
+                    <td>68</td>
+                </tr>
+
+
+            </table>
+            <hr class="my_hr" />
+            <div id="buttonsHolder">
+                <button type="button" onclick="Soritraj()">Sortiraj</button>
+                <button type="button" onclick="ObojiNeparne()">Oboji neparne</button>
+                <button type="button" onclick="Polozili()">Položili</button>
+                <button type="button" onclick="NisuPolozili()">Nisu položili</button>
+                <button type="button" onclick="IzdvojiKojiSuPolozili()">Izdvoji one koji su položili</button>
+            </div>
+        </div>
+        <div class="footer">
+            <label class="label_text">Elektrotehnička škola "Nikola Tesla" Niš</label>
+            <a href="/about.html">O autoru</a>
+            <a href="/uputstvo.html">Uputstvo</a>
+        </div>
+    </div>
+
+    <script>
+
+
+		function Osoba ()
+		{
+			this.rbr;
+			this.ime;
+			this.prezime;
+			this.skola;
+			this.poeni;
+		}
+
+		var Osobe = new Array();
+
+		var divButtonsHolder  = document.getElementById('buttonsHolder');
+		divButtonsHolder.innerHTML += '';
+
+		var tabela = document.getElementById('Tabela');
+
+		var rows = tabela.rows;
+		for(var i = 1; i < rows.length; i++)
+		{
+			var red = rows[i];
+			var o = new Osoba();
+			o.rbr = red.cells[0].innerText;
+			o.ime = red.cells[1].innerText;
+			o.prezime = red.cells[2].innerText;
+			o.skola = red.cells[3].innerText;
+			o.poeni = red.cells[4].innerText;
+
+			Osobe.push(o);
+		}
+
+		function PoeniSort(a, b)
+		{
+			if(a.poeni > b.poeni)
+				return 1;
+			if(a.poeni < b.poeni)
+				return -1;
+			return 0;
+		}
+
+		function Soritraj()
+		{
+
+			Osobe.sort(PoeniSort);
+			Osobe.reverse();
+
+			for(var i =1; i < rows.length;i++)
+			{
+				var red = rows[i];
+				red.cells[0].innerText = Osobe[i-1].rbr;
+				red.cells[1].innerText = Osobe[i-1].ime;
+				red.cells[2].innerText = Osobe[i-1].prezime;
+				red.cells[3].innerText = Osobe[i-1].skola;
+				red.cells[4].innerText = Osobe[i-1].poeni;
+
+				rows[i].style.backgroundColor = '#ffffff';
+			}
+
+		}
+
+		function ObojiNeparne()
+		{
+			for(var i = 1; i < rows.length; i++)
+			{
+				if(i%2 != 0)
+				{
+					rows[i].style.backgroundColor = '#888888';
+				}
+				else
+				{
+					rows[i].style.backgroundColor = '#ffffff';
+				}
+			}
+		}
+
+		function Polozili()
+		{
+			for(var i = 1; i < rows.length; i++)
+			{
+				if(rows[i].cells[4].innerText > 50)
+					rows[i].style.backgroundColor = '#17C700';
+				else
+				{
+					rows[i].style.backgroundColor = '#ffffff';
+				}
+			}
+		}
+
+		function NisuPolozili()
+		{
+			for(var i = 1; i < rows.length; i++)
+				{
+				if(rows[i].cells[4].innerText < 50)
+					rows[i].style.backgroundColor = '#FF0000';
+				else
+				{
+					rows[i].style.backgroundColor = '#ffffff';
+				}
+			}
+		}
+
+		function IzdvojiKojiSuPolozili()
+		{
+			for(var i = 1; i < rows.length; i++)
+			{
+				if(rows[i].cells[4].innerText < 50)
+				{
+					tabela.deleteRow(i);
+					i--;
+				}
+			}
+
+		}
+
+    </script>
+
+</body>
+</html>

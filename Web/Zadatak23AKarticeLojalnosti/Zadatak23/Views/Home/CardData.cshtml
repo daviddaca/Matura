@@ -1,0 +1,71 @@
+﻿@model Zadatak23.Models.LoyaltyCard
+
+<div>
+    @if (!string.IsNullOrEmpty(Model.BrojKartice))
+    {
+        <div class="alert alert-success">Podaci o kartici @Model.BrojKartice</div>
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BrojKartice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BrojKartice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ImeVlasnika)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ImeVlasnika)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PrezimeVlasnika)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PrezimeVlasnika)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AdresaVlasnika)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AdresaVlasnika)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.OstvareniBodovi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OstvareniBodovi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.OstvareniPopust)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OstvareniPopust)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RokVazenja)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RokVazenja)
+            </dd>
+
+        </dl>
+    }
+    else
+    {
+        <div class="alert alert-danger">@Model.ErrorMessage</div>
+    }
+</div>

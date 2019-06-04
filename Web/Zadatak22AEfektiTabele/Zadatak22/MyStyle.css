@@ -1,0 +1,86 @@
+﻿body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+.zadatak_no {
+    float: left;
+    padding: 30px 0;
+    border-right: 1px solid white;
+    width: 130px;
+}
+
+.zadatak_naziv {
+    padding: 30px 0;
+}
+
+.page_holder {
+    margin: auto;
+    width: 800px;
+    border: 1px solid #264c73;
+}
+
+.header_panel {
+    background-color: #264c73;
+    color: white;
+    border-bottom: 2px solid #3f7fc0;
+}
+
+.footer {
+    background-color: #264c73;
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid #3f7fc0;
+}
+
+.label_text {
+    margin-left: 20px;
+}
+
+hr.my_hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer a {
+    padding-right: 20px;
+    color: white;
+    float: right;
+}
+
+.about {
+    padding: 20px;
+    color: #00264d;
+}
+
+.uputstvo {
+    padding: 20px;
+    color: #00264d;
+}
+
+.back_panel {
+    padding: 10px;
+}
+
+.kontakt {
+    padding: 15px;
+}
+
+#buttonsHolder {
+    width: 500px;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 22px;
+}
+
+th {
+    background-color: silver;
+}
+
+table {
+    border-collapse: collapse;
+}

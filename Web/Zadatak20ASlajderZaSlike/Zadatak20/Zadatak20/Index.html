@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Slider</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="MyStyle.css" type="text/css" />
+</head>
+<body>
+    <div class="page_holder">
+        <div class="header_panel">
+            <div class="zadatak_no">
+                <label class="label_text">Zadatak 20</label>
+            </div>
+            <div class="zadatak_naziv">
+                <label class="label_text">Image slider</label>
+            </div>
+        </div>
+        <div class="back_panel">
+            <div id="slike" style="display:none;">
+                <img src="slike/001.jpg">
+                <img src="slike/002.jpg">
+                <img src="slike/003.jpg">
+                <img src="slike/004.jpg">
+                <img src="slike/005.jpg">
+                <img src="slike/006.jpg">
+                <img src="slike/007.jpg">
+                <img src="slike/008.jpg">
+                <img src="slike/009.jpg">
+                <img src="slike/010.jpg">
+                <img src="slike/011.jpg">
+                <img src="slike/012.jpg">
+                <img src="slike/013.jpg">
+                <img src="slike/014.jpg">
+            </div>
+
+            <div id="galerija">
+                <div id="slikapreview">
+                    <img id="activePic" src="" />
+                </div>
+                <div id="pointsHolder">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <label class="label_text">Elektrotehnička škola "Nikola Tesla" Niš</label>
+            <a href="/about.html">O autoru</a>
+            <a href="/uputstvo.html">Uputstvo</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var currentImage = 0;
+        var slike = document.getElementById("slike");
+        var myVar = setInterval(myTimer, 3000);
+
+        PostaviIndikatore();
+        PrikaziSliku();
+
+        function myTimer() {
+
+            if (currentImage == slike.children.length)
+                currentImage = 0;
+
+            //Prikazi sliku
+            PrikaziSliku();
+        }
+
+        function PrikaziSliku() {
+            var activePic = document.getElementById("activePic");
+            activePic.src = slike.children[currentImage].src;
+
+            for (var i = 0 ; i < pointsHolder.children.length; i++) {
+                if (pointsHolder.children[i] != null) {
+                    pointsHolder.children[i].style.backgroundColor = "gray";
+                }
+            }
+
+            var currentpoint = document.getElementById("pt" + currentImage);
+            currentpoint.style.backgroundColor = "silver";
+
+            activePic.style.opacity = 0;
+
+            fadeIn();
+
+            currentImage++;
+
+        }
+
+        function PostaviIndikatore() {
+
+            var pointsHolder = document.getElementById("pointsHolder");
+
+            for (var index = 0; index < slike.children.length; index++) {
+                var pointid = "pt" + index;
+
+                pointsHolder.innerHTML += '<div class="indikator" id=' + pointid + '></div>';
+
+            }
+        }
+
+        function fadeIn() {
+            var element = document.getElementById("activePic");
+            var opacity = parseFloat(element.style.opacity);
+            opacity += parseFloat(0.05);
+            if (opacity > 1.0) {
+                element.style.opacity = 1;
+            } else {
+                element.style.opacity = opacity;
+                setTimeout("fadeIn();", 50);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
