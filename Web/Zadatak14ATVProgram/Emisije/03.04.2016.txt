@@ -1,0 +1,3 @@
+08:00|Jutarnji dnevnik|Informativni program|slike/ip.png
+09:00|Sundjer Bob|Crtani film|slike/crtani.png
+10:00|Back to th Future|Film|slike/film.png

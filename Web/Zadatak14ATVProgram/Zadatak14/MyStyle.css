@@ -1,0 +1,120 @@
+﻿body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+.zadatak_no {
+    float: left;
+    padding: 30px 0;
+    border-right: 1px solid white;
+    width: 130px;
+}
+
+.zadatak_naziv {
+    padding: 30px 0;
+}
+
+.page_holder {
+    margin: auto;
+    width: 900px;
+    border: 1px solid #264c73;
+}
+
+.header_panel {
+    background-color: #264c73;
+    color: white;
+    border-bottom: 2px solid #3f7fc0;
+}
+
+.footer {
+    background-color: #264c73;
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid #3f7fc0;
+}
+
+.label_text {
+    margin-left: 20px;
+}
+
+hr.my_hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#lbl_error_message {
+    color: red;
+}
+
+.footer a {
+    padding-right: 20px;
+    color: white;
+    float: right;
+}
+
+.about {
+    padding: 20px;
+    color: #00264d;
+}
+
+.uputstvo {
+    padding: 20px;
+    color: #00264d;
+}
+
+input {
+    margin-top: 5px;
+}
+
+#btnSearch {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+td img{
+    width: 64px;
+    height: 64px;
+}
+
+.tabela {
+    border-width: 1px;    
+    margin: auto;
+}
+
+th {
+    background-color: #264c73;
+    color: white;
+}
+
+.back_panel {
+    color: #264c73;
+    padding: 10px;
+}
+
+.src_datum{
+    margin-top:5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.src_tip_emisije{
+    margin-top:5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.colVreme {
+    width: 100px;
+}
+
+.colNaziv {
+    width: 350px;
+}
+
+.colTip {
+    width: 100px;
+}
+

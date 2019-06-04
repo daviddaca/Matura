@@ -1,0 +1,13 @@
+Ceca|Poziv|Turbo-Folk|2013|Miligram Music|slike/Ceca.jpg
+Guns N' Roses|Appetite for Destruction|hard rock|1987|Mike Clink|slike/GunsnRoses.jpg
+Michael Jackson|Thriller|Pop|1982|Quincy Jones|slike/MichaelJack.png
+Queen|Greatest Hits II|Rock|1991|Parlophone|slike/Queens.png
+Whitesnake|Restless Heart|Blues rock|1997|EMI|slike/Whitesnake.jpg
+AC/DC|T.N.T.|Hard rock|1975|Albert|slike/ACDC.jpg
+Dino Merlina|Fotografija|Turbo-Folk|1995|InTakt Records|slike/Dino.jpg
+Daft Punk|Random Access Memories|Electronic|2013|Columbia|slike/DaftPunk.jpg
+The Notorious B.I.G|Life After Death|Gangsta rap|1997|Bad Boy|slike/BIG.jpg
+John Williams|Star Wars|Classical|1977|20th Century Records|slike/StarWars.jpg
+Skrillex|Bangarang|Dubstep|2011|Atlantic|slike/Bangarang.jpg
+Bajaga i instruktori|Muzika na struju|Zabavna|1993|Nema|slike/Bajaga.jpg
+
