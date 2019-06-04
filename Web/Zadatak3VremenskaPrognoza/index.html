@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Временска прогноза - Почетна</title>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="container">
+            <div id="headerContainer">
+                <h1>Временска прогноза</h1>
+                <h2>Задатак за матуру бр. 3</h2>
+            </div>
+            <div id="menuContainer">
+                <a href="index.html"><div class="menuItem">Почетна</div></a>
+                <a href="autor.html"><div class="menuItem">О аутору</div></a>
+                <a href="uputstvo.html"><div class="menuItem">Упутство</div></a>
+                <div class="infoItem">ЕТШ "Никола Тесла" 2016</div></a>
+            </div>
+            <div id="contentContainer">
+                <div id="content">
+                    <div id="iframeContainer">
+                        <p>
+                            <b>Град:</b>
+                            <select id="grad" onchange="Prikazi();">
+                                <option value="beograd">Београд</option>
+                                <option value="nis">Ниш</option>
+                                <option value="novi-sad">Нови Сад</option>
+                                <option value="krusevac">Крушевац</option>
+                                <option value="cacak">Чачак</option>
+                                <option value="vranje">Врање</option>
+                                <option value="kragujevac">Крагујевац</option>
+                                <option value="majdanpek">Majданпек</option>
+                                <option value="pirot">Пирот</option>
+                                <option value="leskovac">Лесковац</option>
+                            </select>
+                        </p>
+                        <iframe id="prikaz" src="http://www.naslovi.net/vremenska-prognoza/beograd"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

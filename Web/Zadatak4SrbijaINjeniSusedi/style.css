@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    background-color: white;
+
+    font-family: 'Slabo 27px', Arial;
+}
+
+#headerContainer {
+    width: 100%;
+    height: 64px;
+    background-color: #B4D9EB;
+}
+
+#headerContainer h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 40px;
+
+    margin-left: 15px;
+}
+
+#headerContainer h2 {
+    margin: 0;
+    font-size: 12px;
+    line-height: 10px;
+
+    margin-left: 15px;
+    color: #666666;
+}
+
+#container {
+    width: 960px;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+#menuContainer {
+    width: 100%;
+    height: 40px;
+
+    background-color: #82B7D0;
+}
+
+#menuContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuItem {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+
+    line-height: 40px;
+    font-size: 16px;
+
+    border: 1px solid black;
+    border-width: 0px 1px 0px 0px;
+}
+
+.menuItem:hover {
+    background-color: #3A6B83;
+    color: white;
+}
+
+.infoItem {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+
+    float: right;
+    font-family: 'Tahoma', Arial;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#contentContainer {
+    width: 958px;
+    height: 100%;
+
+    background-color: #B4D9EB;
+    margin: 0;
+    padding: 1px;
+}
+
+#content {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#mapa {
+    width: 90%;
+    height: 600px;
+    background-image: url('images/mapa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+#srb {
+    position: absolute;
+    top: 280px;
+    left: 340px;
+}
+
+#bih {
+    position: absolute;
+    top: 275px;
+    left: 235px;
+}
+
+#cro {
+    position: absolute;
+    top: 200px;
+    left: 190px;
+}
+
+#cng {
+    position: absolute;
+    top: 350px;
+    left: 280px;
+
+    font-size: 12px;
+}
+
+#alb {
+    position: absolute;
+    top: 455px;
+    left: 315px;
+
+    font-size: 12px;
+}
+
+#mac {
+    position: absolute;
+    top: 415px;
+    left: 360px;
+}
+
+#bug {
+    position: absolute;
+    top: 355px;
+    left: 480px;
+}
+
+#rum {
+    position: absolute;
+    top: 200px;
+    left: 480px;
+}
+
+#mdj {
+    position: absolute;
+    top: 130px;
+    left: 280px;
+}
+
+.zastava {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 20px;
+    width: 40px;
+    height: 20px;
+}
+
+#srb_zas {
+    background-image: url('images/srbija.jpg');
+    position: absolute;
+    top: 300px;
+    left: 340px;
+}
+
+#cng_zas {
+    background-image: url('images/crnagora.jpg');
+    position: absolute;
+    top: 370px;
+    left: 280px;
+}
+
+#bug_zas {
+    background-image: url('images/bugarska.jpg');
+    position: absolute;
+    top: 375px;
+    left: 480px;
+}
+
+#rum_zas {
+    background-image: url('images/rumunija.png');
+    position: absolute;
+    top: 220px;
+    left: 480px;
+}
+
+#cro_zas {
+    background-image: url('images/hrvatska.gif');
+    position: absolute;
+    top: 220px;
+    left: 190px;
+}
+
+#bih_zas {
+    background-image: url('images/bih.jpg');
+    position: absolute;
+    top: 295px;
+    left: 235px;
+}
+
+#alb_zas {
+    background-image: url('images/albanija.png');
+    position: absolute;
+    top: 475px;
+    left: 315px;
+}
+
+#mdj_zas {
+    background-image: url('images/madjarska.jpg');
+    position: absolute;
+    top: 150px;
+    left: 280px;
+}
+
+#mac_zas {
+    background-image: url('images/makedonija.png');
+    position: absolute;
+    top: 435px;
+    left: 360px;
+}
