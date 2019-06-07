@@ -1,0 +1,11 @@
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\bin\Debug\BaracVladimir.exe.config
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\bin\Debug\BaracVladimir.exe
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\bin\Debug\BaracVladimir.pdb
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.Form1.resources
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.Properties.Resources.resources
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.csproj.GenerateResource.Cache
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.exe
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.pdb
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.Form2.resources
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.Form3.resources
+C:\Users\R1\Desktop\Vladimir Barac   B33\BaracVladimir\BaracVladimir\obj\Debug\BaracVladimir.csprojResolveAssemblyReference.cache

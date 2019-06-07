@@ -1,0 +1,11 @@
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\bin\Debug\PozorisnePredstave.exe.config
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\bin\Debug\PozorisnePredstave.exe
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\bin\Debug\PozorisnePredstave.pdb
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.csprojResolveAssemblyReference.cache
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.Form1.resources
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.Form2.resources
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.Properties.Resources.resources
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.csproj.GenerateResource.Cache
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.exe
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.pdb
+C:\Users\R1\Desktop\David Milenkovic B12\PozorisnePredstave\PozorisnePredstave\obj\Debug\PozorisnePredstave.Form3.resources
